@@ -6,7 +6,7 @@ void main() {
 
 void study1() {
   // dynamic
-  var name;
+  Object name;
   name = 'HM';
   name = 12;
   name = true;
@@ -33,13 +33,13 @@ void study2() {
 }
 
 void study3() {
-  final name = 'nico';
-  final String name2 = 'nico';
+  const name = 'nico';
+  const String name2 = 'nico';
   // name = 'nico2' X
 }
 
 void study4() {
-  late final name;
+  late final String name;
   // print(name) X
   name = "nico";
   print(name);
@@ -47,7 +47,7 @@ void study4() {
 
 void study5() {
   // compile-time constant
-  const max_aplication_key = '121212'; //compile-time 절대 값 컴파일 될때 생성\
+  const maxAplicationKey = '121212'; //compile-time 절대 값 컴파일 될때 생성\
   int i = 12; // 작은 메서드내 에서는 var 사용 class 는 자료형 정의해주자
   var name = 'la';
   i = 1212121212;

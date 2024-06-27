@@ -32,10 +32,10 @@ void main() {
     {"name": "nico", "xp": 12, "team": "red"}
   ];
 
-  apiData.forEach((playerJson) {
+  for (var playerJson in apiData) {
     var player = Player.fromJson(playerJson);
     player.sayHi();
-  });
+  }
 
   var nico = Player(name: 'nico', xp: 12, team: Team.red);
   var potato = nico
