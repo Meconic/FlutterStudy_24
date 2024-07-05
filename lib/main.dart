@@ -1,24 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/screens/home_screen.dart';
+import 'package:untitled/screens/webtoon_home_screen.dart';
+import 'package:untitled/service/api_service.dart';
 
 void main() {
   runApp(App());
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        canvasColor: Color(0xFFE7626C),
-        textTheme: TextTheme(
-          headlineSmall: TextStyle(
-            color: Color(0xFF232B55),
-          ),
-        ),
-        cardColor: Color(0xFFF4EDDB),
-      ),
-      home: HomeScreen(),
+      home: WebToonHomeScreen(),
     );
   }
 }
